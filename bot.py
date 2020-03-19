@@ -40,9 +40,9 @@ for event in longpoll.listen():
                         vk.messages.send( #Отправляем сообщение
                             user_id=event.user_id,
                             random_id=event.random_id,
-                            message='В городе ' + event.text + ' ' + w.get_detailed_status() + '\n\
-                            Температура в районе ' + str(temp) + '°\n\
-                            Сейчас прохладно, надень ветровку.'
+                            message='В городе ' + event.text + ' ' + w.get_detailed_status() + '\
+                            \n\nТемпература в районе ' + str(temp) + '°\
+                            \nСейчас прохладно, надень ветровку.'
                         )
                     else:
                         vk.messages.send( #Отправляем сообщение
