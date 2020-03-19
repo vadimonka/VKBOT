@@ -32,25 +32,25 @@ for event in longpoll.listen():
                         vk.messages.send( #Отправляем сообщение
                             user_id=event.user_id,
                             random_id=event.random_id,
-                            message='В городе ' + event.text + ' ' + w.get_detailed_status() + '\n\
-                            Температура в районе ' + str(temp) + '°\n\
-                            Сейчас ппц как холодно, одевайся как танк епта!'
+                            message='В городе ' + event.text + ' ' + w.get_detailed_status() + '\
+                            \nТемпература в районе ' + str(temp) + '°\
+                            \nСейчас ппц как холодно, одевайся как танк епта!'
                         )
                     elif temp < 21:
                         vk.messages.send( #Отправляем сообщение
                             user_id=event.user_id,
                             random_id=event.random_id,
                             message='В городе ' + event.text + ' ' + w.get_detailed_status() + '\
-                            \n\nТемпература в районе ' + str(temp) + '°\
+                            \nТемпература в районе ' + str(temp) + '°\
                             \nСейчас прохладно, надень ветровку.'
                         )
                     else:
                         vk.messages.send( #Отправляем сообщение
                             user_id=event.user_id,
                             random_id=event.random_id,
-                            message='В городе ' + event.text + ' ' + w.get_detailed_status() + '\n\
-                            Температура в районе ' + str(temp) + '°\n\
-                            Температура огонь, но бабушкины труселя всё равно пригодятся.'
+                            message='В городе ' + event.text + ' ' + w.get_detailed_status() + '\
+                            \nТемпература в районе ' + str(temp) + '°\
+                            \nТемпература огонь, но бабушкины труселя всё равно пригодятся.'
                         )
                 except:
                     vk.messages.send( #Отправляем сообщение
